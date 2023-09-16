@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            height: 70px;
+        }
+
+        .img {
+            width: 10%;
+            background-color: white;
+        }
+
+        .btn1,
+        .btn2 {
+            padding: 10px;
+            border: none;
+            color: white;
+            border-radius: 13px;
+            width: 105px;
+            background-color: royalblue;
+            cursor: pointer;
+        }
+
+        .ProfilePage {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+
+        .Box1 {
+            width: 300px;
+        }
+
+
+        .Box2 {
+            padding: 30px;
+            margin: 5%;
+        }
+
+        .box3 {
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
+            width: 400px;
+            padding: 10px;
+            margin-left: -10%;
+        }
+
+        .img2 {
+            border-radius: 50%;
+            background-color: #f2f2f2;
+            padding: 50px;
+            border: 1px solid black;
+        }
+
+
+        .MainLineinPost {
+            width: 60%;
+            margin: auto;
+            margin-top: 2%;
+        }
+
+        .Box5 {
+            display: flex;
+            margin-top: 20px;
+        }
+
+        .Box5 p {
+            display: flex;
+            margin: 10px;
+        }
+
+        .box6 {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .box6 button {
+            width: 80px;
+            padding: 8px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <span class="logo">
+            <img src="https://e7.pngegg.com/pngimages/712/1009/png-clipart-letter-instagram-font-instagram-text-logo.png"
+                class="img" alt="Logo">
+        </span>
+        <span>
+            <button class="btn1">Log In</button>
+            <a href="http://127.0.0.1:3000/api/singup">
+                <button class="btn2"> Sign Up</button>
+            </a>
+        </span>
+    </header>
+    <hr>
+
+    <div class="ProfilePage">
+        <span class="Box1">
+            <img src="./" class="img2" alt="">
+        </span>
+        <div class="box3">
+            <span class="Box2">
+                <div class="box6">
+                    <span>
+                        <h2>
+                            <%= username %>
+                        </h2>
+                        <%= console.log({username,follower,post}) %>
+                    </span>
+                    <span>
+                        <button>
+                            Follow
+                        </button>
+                        <button>Message</button>
+                    </span>
+                </div>
+                <div class="Box5">
+                    <p>
+                        <%= post %> post
+                    </p>
+                    <p>
+                        <%= follower %> Followers
+                    </p>
+                    <p>
+                        <%= following %> Following
+                    </p>
+                </div>
+            </span>
+        </div>
+    </div>
+    <hr class="MainLineinPost">
+</body>
+
+</html>

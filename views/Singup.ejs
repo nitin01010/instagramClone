@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    body {
+        text-align: center;
+        background-color: #f2f2f2;
+    }
+
+    input,
+    button {
+        width: 40%;
+        padding: 10px;
+        border: none;
+        font-size: 18px;
+        background-color: white;
+        border-radius: 4px;
+        outline: 1px solid skyblue;
+    }
+
+    form {
+        margin-top: 4%;
+    }
+
+    button {
+        cursor: pointer;
+        background-color: royalblue;
+        color: white;
+        border-radius: 4px;
+    }
+
+    button:hover {
+        background-color: black;
+        transition: all ease 0.500s;
+    }
+</style>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram | Sing Up</title>
+</head>
+
+<body>
+    <h1>Welcome to Sing Up </h1>
+
+    <form action="/api/post/insta" method="post">
+        <input type="text" placeholder="Enter username" name="username" /> <br> <br>
+        <input type="number" placeholder="Enter follower" name="follower" /> <br><br>
+        <input type="number" placeholder="Enter following" name="following" /><br> <br>
+        <input type="number" placeholder="Enter post" name="post" /><br> <br>
+        <button>Sign Up</button><br> <br>
+    </form>
+    <a href="http://127.0.0.1:3000/instagran" target="_blank">
+        <button>Login</button>
+    </a>
+
+</body>
+
+</html>
